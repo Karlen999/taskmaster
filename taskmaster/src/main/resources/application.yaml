@@ -1,0 +1,18 @@
+spring:
+  datasource:
+      url: jdbc:mysql://localhost:3306/taskmaster?useUnicode=true&characterEncoding=utf8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+      username: root
+      password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+#jwt
+jwt:
+  secret: JHF*$%*@122WKED52
+  expiration: 6000000
+  header: Autorization
